@@ -1,0 +1,50 @@
+body {
+   background-color:  hsl(0, 0%, 95%)
+}
+
+.m-card {
+    display: inline-flex;
+    columns: 1fr, 1fr, 1fr;
+    background-color: aqua;
+    ;
+}
+
+.col-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.col-2 {
+    background-color:hsl(184, 100%, 22%);
+}
+
+.col-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+h1 {
+    color:  hsl(0, 0%, 95%); 
+    text-align: center;
+    justify-content: center;
+}
+
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    border: none;
+    
+}
+
+.attribution {
+    display: block;
+    bottom: 0%;
+}
+
