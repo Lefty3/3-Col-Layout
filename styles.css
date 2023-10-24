@@ -1,50 +1,160 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
 body {
-   background-color:  hsl(0, 0%, 95%)
+	min-height: 100svh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* End of Andy Bell's CSS Reset */
+
+body {
+	background-color: hsl(0, 0%, 95%);
 }
 
 .m-card {
-    display: inline-flex;
-    columns: 1fr, 1fr, 1fr;
-    background-color: aqua;
-    ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .col-1 {
-    background-color: hsl(31, 77%, 52%);
+	background-color: hsl(31, 77%, 52%);
+	height: 60%;
+	width: 20%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 .col-2 {
-    background-color:hsl(184, 100%, 22%);
+	background-color: hsl(184, 100%, 22%);
+	height: 60%;
+	width: 20%;
+	
 }
 
 .col-3 {
-    background-color: hsl(179, 100%, 13%);
+	background-color: hsl(179, 100%, 13%);
+	height: 60%;
+	width: 20%;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
-
 
 h1 {
-    color:  hsl(0, 0%, 95%); 
-    text-align: center;
-    justify-content: center;
+	color: hsl(0, 0%, 95%);
+	text-align: start;
+	padding-left: 15%;
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 700;
 }
 
-
 p {
-    color: hsla(0, 0%, 100%, 0.75);
-    font-size: 15px;
-    text-align: center;
-    justify-content: center;
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 15px;
+	text-align: start;
+	padding-left: 15%;
+	margin-right: 10%;
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 400;
 }
 
 button {
-    background-color: hsl(0, 0%, 95%);
-    padding: 10px;
-    border: none;
-    
+	background-color: hsl(0, 0%, 95%);
+	display: block;
+	margin-top: 50%;
+	margin-left: 15%;
+	padding: 10px 30px;
+	border-radius: 20px;
+	border: none;
+}
+
+.btn-1 {
+color: hsl(31, 77%, 52%);
+}
+.btn-2 {
+	color:hsl(184, 100%, 22%);
+}
+.btn-3 {
+	color: hsl(179, 100%, 13%);
 }
 
 .attribution {
-    display: block;
-    bottom: 0%;
+	display: inline-block;
+	bottom: 0%;
+	text-align: center;
+	justify-content: center;
 }
 
+img {
+	padding-left: 15%;
+	margin-top: 15%;
+}
